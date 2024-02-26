@@ -9,7 +9,9 @@ module Blood
   def self.source(mods)
     hier = Hash.new{ |h, k| h[k] = Set.new }
     mods.each do |mod|
-      mod.ancestors.zip(mod.ancestors.drop(1)).each do |(child, parent)|
+      ances = mod.ancestors
+      ances.each_with_index do |child, i|
+        parent = ances[i + 1]
         hier[parent] << child
       end
     end
