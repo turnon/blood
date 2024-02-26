@@ -32,11 +32,17 @@ module Blood
     end
 
     def children_for_tree_html
-      @hier[@mod].map{ |sub| Node.new(sub, @hier) }
+      children.map{ |sub| Node.new(sub, @hier) }
     end
 
     def css_for_tree_html
       '.hl{color: red;}'
+    end
+
+    private
+
+    def children
+      @hier[@mod].sort_by(&:to_s)
     end
   end
 end
