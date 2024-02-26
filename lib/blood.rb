@@ -36,7 +36,7 @@ module Blood
     end
 
     def css_for_tree_html
-      '.hl{color: red;}'
+      '.hl{color: #cc342d;}'
     end
 
     private
