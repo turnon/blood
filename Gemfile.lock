@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    blood (0.1.0)
+      tree_html (~> 0.1.10)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.22.2)
+    rake (13.1.0)
+    tree_html (0.1.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  blood!
+  minitest (~> 5.0)
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.2.9
