@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    blood (0.1.0)
+    blood (0.1.1)
       tree_html (~> 0.1.10)
 
 GEM
